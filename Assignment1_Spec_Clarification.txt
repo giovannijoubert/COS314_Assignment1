@@ -1,0 +1,23 @@
+There have been some questions regarding the first assignment.
+
+For the data files, provided via the link in the assignment description, 
+the values given in the matrix are the cost of going from row i to column 
+j (ie: the value in row 5 column 7 is the cost of going from city 5 to city 7).  
+
+There are two different types of matrices in the data files.  
+The first has the diagonal (ie: the distance from a city to itself) 
+represented by a very large number (eg: 9999) and the second has the 
+diagonal represented by a zero value.  Your program must be able to cater for both types.
+Any off-diagonal values of zero should be take to mean that the path cost between those 
+two cities is zero.
+
+Your submitted solution must be a single executable file, which takes a string
+as a runtime parameter.  This string will be the name of the data file being 
+used (you can assume that this string will include any relative directories).
+The format of the data file will be as downloaded from the provided URL 
+(ie: without adjusting the edge weight matrix to be square).  
+The output must be a comma separated list of the path taken and the distance of said path.
+The path and its distance should be separated by a hyphen (eg: 1,2,3,1 – 10).
+
+Your executable must be accompanied by a text file which explains, in sufficient detail,
+the heuristic that was used.
